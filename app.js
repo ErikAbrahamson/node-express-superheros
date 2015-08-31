@@ -21,7 +21,7 @@ var swig = new swig.Swig();
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
